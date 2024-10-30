@@ -40,8 +40,8 @@ class AccountMainPage(BasePage):
 
 
     @allure.step('Переместить ингредиент в поле создания бургера')
-    def put_ingredient_to_constructor_field(self, driver, ingredient):
-        put_ingredient_to_constructor_field = self.transfer_element(driver, ingredient, AccountMainPageLocators.CONSTRUCTOR_FIELD)
+    def put_ingredient_to_constructor_field(self, ingredient):
+        put_ingredient_to_constructor_field = self.transfer_element(self.driver, ingredient, AccountMainPageLocators.CONSTRUCTOR_FIELD)
         return put_ingredient_to_constructor_field
 
 

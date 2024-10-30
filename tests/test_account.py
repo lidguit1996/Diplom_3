@@ -14,7 +14,7 @@ class TestAccount:
     @allure.description('Авторизуемся в личном кабинете и переходим в информацию о профиле')
     def test_login_and_go_profile_information(self, driver):
         main_page = MainPage(driver)
-        main_page.open_page(Urls.BURGERS_MAIN)
+        main_page.open_page()
         main_page.click_account_button()
         login_page = LoginPage(driver)
         login_page.login_account(Credentions.CREATED_USER_1_EMAIL, Credentions.CREATED_USER_1_PASSWORD)
@@ -28,7 +28,7 @@ class TestAccount:
     @allure.description('Авторизуемся в личном кабинете, переходим информацию о профиле, далее в историю заказов')
     def test_go_orders_history(self, driver):
         main_page = MainPage(driver)
-        main_page.open_page(Urls.BURGERS_MAIN)
+        main_page.open_page()
         main_page.click_account_button()
         login_page = LoginPage(driver)
         login_page.login_account(Credentions.CREATED_USER_1_EMAIL, Credentions.CREATED_USER_1_PASSWORD)
@@ -43,7 +43,7 @@ class TestAccount:
     @allure.description('Авторизуемся в личном кабинете и переходим в информацию о профиле, кликаем по кнопке выхода')
     def test_logout(self, driver):
         main_page = MainPage(driver)
-        main_page.open_page(Urls.BURGERS_MAIN)
+        main_page.open_page()
         main_page.click_account_button()
         login_page = LoginPage(driver)
         login_page.login_account(Credentions.CREATED_USER_1_EMAIL, Credentions.CREATED_USER_1_PASSWORD)

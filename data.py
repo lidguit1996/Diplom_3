@@ -1,7 +1,5 @@
 class Urls:
     BURGERS_MAIN = "https://stellarburgers.nomoreparties.site/"
-    RECOVERY_PASSWORD = "https://stellarburgers.nomoreparties.site/forgot-password"
-    RESET_PASSWORD = "https://stellarburgers.nomoreparties.site/reset-password"
     ORDERS_HISTORY = "https://stellarburgers.nomoreparties.site/account/order-history"
 
 
